@@ -1,0 +1,34 @@
+#project {
+  .container {
+    .items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      box-shadow: rgba(231, 229, 234, 0.2) 0px 8px 24px;
+
+      .item {
+        position: relative;
+        background-color: #ad0e68;
+        overflow: hidden;
+        border-radius: 15px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          display: block;
+          background-color: $seven-color;
+          opacity: 0.8;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transform: translateX(-120%) rotate(5deg);
+          transition: transform 2s;
+        }
+        &:hover::after {
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}

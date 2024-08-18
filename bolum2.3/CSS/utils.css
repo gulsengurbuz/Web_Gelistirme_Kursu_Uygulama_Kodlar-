@@ -1,0 +1,98 @@
+:root {
+  --max-width: 1100px;
+  --color-btnn: linear-gradient(90deg, #03a9f4, #f441a5);
+}
+.bg-color-btn {
+  background-color: var(--color-btnn);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.btn-block {
+  font-size: 1em;
+  padding: 0.6em 0.8em;
+  border-radius: 0.3em;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #000000b4;
+}
+
+.btn-block {
+  position: relative;
+  padding: 3px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  border-radius: 0.3em;
+  transition: all 0.4s ease;
+}
+
+.btn-block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 0.3em;
+  z-index: -10;
+  filter: blur(0);
+  transition: filter 0.4s ease;
+}
+
+.btn-block:hover::before {
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  filter: blur(1.2em);
+}
+.btn-block:active::before {
+  filter: blur(0.2em);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+.bg-secodary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+.bg-light {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.padding-1 {
+  padding: 0.5rem;
+}
+
+.padding-2 {
+  padding: 0.6rem;
+}
+
+.margin-1 {
+  margin: 1.6rem;
+}
+
+.card {
+  background-color: rgb(69, 1, 43);
+  padding: 1rem;
+  border-radius: 20px;
+  color: rgb(240, 223, 223);
+}
+.card-primary {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+.katagori {
+  display: inline-block;
+  color: white;
+  background: linear-gradient(90deg, #76022d92, #ce09c874);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  margin-bottom: 0.2rem;
+}

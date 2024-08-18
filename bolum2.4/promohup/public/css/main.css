@@ -1,0 +1,446 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #b9a6df;
+  font-family: "Prompt", sans-serif;
+  line-height: 1.5; }
+
+a {
+  text-decoration: none;
+  color: #800080; }
+
+ul {
+  list-style: none; }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+#contact-bolum1 .form-dosyası {
+  display: grid;
+  grid-template-areas: "name email" "subject phone" "message message" "button button";
+  gap: 1.2rem;
+  margin-bottom: 1rem; }
+  #contact-bolum1 .form-dosyası .name {
+    grid-area: name; }
+  #contact-bolum1 .form-dosyası .email {
+    grid-area: email; }
+  #contact-bolum1 .form-dosyası .phone {
+    grid-area: phone; }
+  #contact-bolum1 .form-dosyası .subject {
+    grid-area: subject; }
+  #contact-bolum1 .form-dosyası .message {
+    grid-area: message;
+    height: 180px; }
+  #contact-bolum1 .form-dosyası .btn-dark {
+    grid-area: button; }
+  #contact-bolum1 .form-dosyası .input {
+    padding: 0.5rem 1rem; }
+
+#contact-bolum2 .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  color: #fff; }
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem; }
+  .main-nav__logo {
+    width: 70px;
+    height: 70px; }
+  .main-nav__items {
+    display: flex; }
+    .main-nav__items li {
+      padding: 1rem 1.5rem; }
+      .main-nav__items li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s; }
+        .main-nav__items li a:hover {
+          border-color: #9538f2; }
+        .main-nav__items li a.activate {
+          border-color: #ff00ff; }
+
+#header__home {
+  background-image: url("/promohup/img/resim38.jpg");
+  background-size: contain;
+  /* Resmin tamamını gösterir */
+  background-position: center;
+  /* Resmi ortalar */
+  height: 100vh;
+  color: #ffffff; }
+  #header__home .header-content {
+    text-align: center;
+    padding-top: 15%; }
+  #header__home h1 {
+    font-size: 4rem;
+    line-height: 1.2; }
+  #header__home .typewrite {
+    display: block; }
+
+#header__inner {
+  background: url("/promohup/img/resim38.jpg") no-repeat 50% 10%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ff00ff; }
+
+.container {
+  max-width: 1200px;
+  padding: 0 1.4rem;
+  margin: auto; }
+
+.btn-dark, .btn-light, .btn-medium {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 20px;
+  color: #ffffff;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  top: 1.5rem;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  cursor: pointer; }
+
+.btn-dark {
+  color: aliceblue;
+  background-color: #800080; }
+
+.btn-light {
+  color: white;
+  background-color: #d580ff; }
+
+.btn-medium {
+  color: black;
+  background-color: #9538f2; }
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms; }
+
+.btn:hover {
+  color: #e8e8e8; }
+
+.btn:hover::before {
+  width: 100%; }
+
+.bg-dark {
+  background-color: #800080; }
+
+.bg-light {
+  background-color: #d580ff; }
+
+.bg-primary {
+  background-color: #ff00ff; }
+
+.bg-medium {
+  background-color: #9538f2; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.text_center {
+  text-align: center; }
+
+.section-title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center; }
+
+.border-bottom {
+  height: 3px;
+  width: 3rem;
+  background-color: #ff00ff;
+  margin: 0 auto 1rem auto; }
+
+.lead {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  word-spacing: 2px; }
+
+#about-bölüm1 .info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.2rem; }
+  #about-bölüm1 .info__image {
+    border: 10px #a62177;
+    padding: 0.2rem;
+    border-radius: 10px; }
+  #about-bölüm1 .info__bio {
+    border-radius: 20px;
+    background-color: #9a5bd9;
+    text-align: center;
+    padding: 3rem; }
+
+#about-bolum2 {
+  color: #fff;
+  background-color: #a62177; }
+  #about-bolum2 #progress-bar .progress {
+    height: 20px;
+    background-color: #f2aeee;
+    border-radius: 5px;
+    margin-bottom: 0.6rem; }
+    #about-bolum2 #progress-bar .progress div {
+      height: 100%;
+      text-align: center;
+      background-color: #395273; }
+
+#about-bolum3 .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  align-items: center; }
+  #about-bolum3 .about-logos img {
+    width: 70%; }
+
+#about-bolum4 .referances ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center; }
+
+#about-bolum4 .referances p {
+  border: 1px solid #800080;
+  border-radius: 5px;
+  padding: 0.5rem; }
+
+#about-bolum4 .referances img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-right: 0.5rem; }
+
+#home {
+  margin-top: 2.5rem; }
+  #home__bölüm1 .skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    padding-top: 120px; }
+    #home__bölüm1 .skills i {
+      font-size: 2.5rem;
+      color: #a62177;
+      padding-bottom: 1.2rem;
+      margin-bottom: 20px; }
+    #home__bölüm1 .skills h3 {
+      color: white; }
+    #home__bölüm1 .skills p {
+      margin-top: 20px; }
+  #home__bölüm2 .performans {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    #home__bölüm2 .performans li {
+      text-align: center; }
+      #home__bölüm2 .performans li i {
+        font-size: 2.5rem;
+        color: #090126;
+        padding-bottom: 1.2rem;
+        margin-bottom: 20px; }
+      #home__bölüm2 .performans li.title {
+        font-size: 1.5rem; }
+      #home__bölüm2 .performans li.number {
+        font-size: 2rem;
+        font-weight: bold; }
+    #home__bölüm2 .performans div {
+      padding: 3rem 0; }
+      #home__bölüm2 .performans div:nth-child(odd) {
+        background-color: #9a5bd9; }
+  #home__bölüm3 .process {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center; }
+    #home__bölüm3 .process__step {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 15px;
+      background: #a0bed9;
+      border-radius: 50%;
+      padding: 1rem;
+      transform: all 2s; }
+    #home__bölüm3 .process__icon {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #f2aeee;
+      color: #fff;
+      padding: 2rem;
+      text-align: center; }
+      #home__bölüm3 .process__icon:hover {
+        background-color: #9538f2; }
+        #home__bölüm3 .process__icon:hover .process__step {
+          background-color: #d580ff; }
+
+#main-footer {
+  background-color: #800080;
+  color: #fff;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem; }
+    #main-footer .footer-content .social .fab {
+      margin-right: 1rem;
+      border: 2px solid #ffff;
+      border-radius: 50%;
+      text-align: center;
+      padding: 0.6rem;
+      transition: all 1s; }
+      #main-footer .footer-content .social .fab:hover {
+        background: #ff00ff; }
+
+#project .container .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  box-shadow: rgba(231, 229, 234, 0.2) 0px 8px 24px; }
+  #project .container .items .item {
+    position: relative;
+    background-color: #ad0e68;
+    overflow: hidden;
+    border-radius: 15px; }
+    #project .container .items .item::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: #395273;
+      opacity: 0.8;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateX(-120%) rotate(5deg);
+      transition: transform 2s; }
+    #project .container .items .item:hover::after {
+      transform: translateX(-50%); }
+
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column; }
+    .main-nav__logo {
+      margin-bottom: 1rem; }
+    .main-nav__items {
+      flex-direction: row; }
+  #header__home {
+    background-image: url("/promohup/img/resim38.jpg") no-repeat; }
+    #header__home h1 {
+      font-size: 1rem; }
+  #header__inner {
+    border-bottom: 10px solid #9538f2;
+    height: 180px; }
+  #home__bölüm1 .skills,
+  #home__bölüm2 .performans,
+  #home__bölüm3 .process,
+  .items {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 576px) {
+  .main-nav {
+    flex-direction: column; }
+    .main-nav__logo {
+      margin-bottom: 1rem; }
+    .main-nav__items {
+      flex-direction: row; }
+  #header__home {
+    background-image: url("/promohup/img/resim38.jpg") no-repeat; }
+    #header__home h1 {
+      font-size: 1rem; }
+  #header__inner {
+    border-bottom: 10px solid #9538f2;
+    height: 200px; }
+  #home__bölüm1 .skills,
+  #home__bölüm2 .performans,
+  #home__bölüm3 .process,
+  .items {
+    grid-template-columns: repeat(1, 1fr); }
+  .lead {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    word-spacing: 1px; }
+  #main-footer {
+    height: 7rem; }
+    #main-footer .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem; }
+      #main-footer .footer-content .social {
+        padding-top: 1rem; }
+  #about-bölüm1 .info {
+    grid-template-columns: 1fr; }
+  #about-bolum3 {
+    display: none; }
+  #contact-bolum1 .form-dosyası .form-dosyası {
+    display: grid;
+    grid-template-areas: "name" "email" "subject" "phone" "message " "button"; }
+  #contact_bolum2 div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #fff; }
+    #contact_bolum2 div :last-child {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 0; }
+  #project .container .items {
+    grid-template-columns: repeat(1, 1fr); }
+  #contact-bolum1 .form-dosyası {
+    display: grid;
+    grid-template-areas: "name" " email" "subject" "phone" "message " "button ";
+    margin-bottom: 2rem; }
+    #contact-bolum1 .form-dosyası .input {
+      padding: 0.8rem 1rem; }
+  #contact-bolum2 .container {
+    grid-template-columns: repeat(1, 1fr); }
+    #contact-bolum2 .container .contact-info {
+      border-bottom: 2px solid #c9dbc8;
+      padding-bottom: 5px;
+      padding-top: 5px; } }

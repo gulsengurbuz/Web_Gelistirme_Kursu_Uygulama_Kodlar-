@@ -1,0 +1,89 @@
+#home {
+  margin-top: 2.5rem;
+
+  &__bölüm1 {
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      padding-top: 120px;
+
+      i {
+        font-size: 2.5rem;
+        color: $six-color;
+        padding-bottom: 1.2rem;
+        margin-bottom: 20px;
+      }
+      h3 {
+        color: rgb(255, 255, 255);
+      }
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__bölüm2 {
+    .performans {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      li {
+        text-align: center;
+        i {
+          font-size: 2.5rem;
+          color: $icon-color;
+          padding-bottom: 1.2rem;
+          margin-bottom: 20px;
+        }
+        &.title {
+          font-size: 1.5rem;
+        }
+        &.number {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+      div {
+        padding: 3rem 0;
+        &:nth-child(odd) {
+          background-color: $five-color;
+        }
+      }
+    }
+  }
+  &__bölüm3 {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+      &__step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 15px;
+        background: $four-color;
+        border-radius: 50%;
+        padding: 1rem;
+        transform: all 2s;
+      }
+      &__icon {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: $three-color;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+        &:hover {
+          background-color: $medium-color;
+          .process__step {
+            background-color: $light-color;
+          }
+        }
+      }
+    }
+  }
+}

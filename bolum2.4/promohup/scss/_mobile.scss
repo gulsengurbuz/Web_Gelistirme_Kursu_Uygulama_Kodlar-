@@ -1,0 +1,158 @@
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+
+    &__logo {
+      margin-bottom: 1rem;
+    }
+    &__items {
+      flex-direction: row;
+    }
+  }
+  #header {
+    &__home {
+      background-image: $bg-image no-repeat;
+
+      h1 {
+        font-size: 1rem;
+      }
+    }
+    &__inner {
+      border-bottom: 10px solid $medium-color;
+      height: 180px;
+    }
+  }
+  #home__bölüm1 .skills,
+  #home__bölüm2 .performans,
+  #home__bölüm3 .process,
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .main-nav {
+    flex-direction: column;
+
+    &__logo {
+      margin-bottom: 1rem;
+    }
+    &__items {
+      flex-direction: row;
+    }
+  }
+  #header {
+    &__home {
+      background-image: $bg-image no-repeat;
+
+      h1 {
+        font-size: 1rem;
+      }
+    }
+    &__inner {
+      border-bottom: 10px solid $medium-color;
+      height: 200px;
+    }
+  }
+  #home__bölüm1 .skills,
+  #home__bölüm2 .performans,
+  #home__bölüm3 .process,
+  .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .lead {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    word-spacing: 1px;
+  }
+
+  #main-footer {
+    height: 7rem;
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+
+      .social {
+        padding-top: 1rem;
+      }
+    }
+  }
+  #about {
+    &-bölüm1 {
+      .info {
+        grid-template-columns: 1fr;
+      }
+    }
+    &-bolum3 {
+      display: none;
+    }
+  }
+  #contact {
+    &-bolum1 {
+      .form-dosyası {
+        .form-dosyası {
+          display: grid;
+          grid-template-areas:
+            "name"
+            "email"
+            "subject"
+            "phone"
+            "message "
+            "button";
+        }
+      }
+    }
+    &_bolum2 {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px dashed #fff;
+        :last-child {
+          border: none;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  #project {
+    .container {
+      .items {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  #contact {
+    &-bolum1 {
+      .form-dosyası {
+        display: grid;
+        grid-template-areas:
+          "name"
+          " email"
+          "subject"
+          "phone"
+          "message "
+          "button ";
+
+        margin-bottom: 2rem;
+
+        .input {
+          padding: 0.8rem 1rem;
+        }
+      }
+    }
+    &-bolum2 {
+      .container {
+        grid-template-columns: repeat(1, 1fr);
+        .contact-info {
+          border-bottom: 2px solid #c9dbc8;
+          padding-bottom: 5px;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}

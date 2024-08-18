@@ -1,0 +1,59 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  &__logo {
+    width: 70px;
+    height: 70px;
+  }
+  &__items {
+    display: flex;
+    li {
+      padding: 1rem 1.5rem;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover {
+          border-color: $medium-color;
+        }
+        &.activate {
+          border-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+#header {
+  &__home {
+    background-image: $bg-image;
+    background-size: contain; /* Resmin tamamını gösterir */
+    background-position: center; /* Resmi ortalar */
+    height: 100vh;
+    color: #ffffff;
+
+    .header-content {
+      text-align: center;
+      padding-top: 15%;
+    }
+    h1 {
+      font-size: 4rem;
+      line-height: 1.2;
+    }
+    .typewrite {
+      display: block;
+    }
+  }
+  &__inner {
+    background: $bg-image no-repeat 50% 10% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $primary-color;
+  }
+}

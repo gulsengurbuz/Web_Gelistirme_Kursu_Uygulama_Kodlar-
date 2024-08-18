@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+
+/* Container Styles */
+.container {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+/* Heading Styles */
+.container h2 {
+  background-color: #00bb51;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Form Group Styles */
+.form-group {
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 8px;
+  display: block;
+  font-weight: bolder;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Input and Textarea Styles */
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input:hover,
+textarea:hover {
+  background-color: #0bc00b;
+  color: white;
+}
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #009b0a;
+  border-color: #009b0a;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 8px;
+  height: 14px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Gender Select Styles */
+#gender {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  font-size: 16px;
+  border-radius: 4px;
+  position: relative;
+}
+
+#gender:hover {
+  background-color: #0cc90c;
+  color: white;
+}
+
+/* Terms and Conditions Styles */
+#agree-terms {
+  font-size: 20px;
+}
+
+#agree-terms label {
+  cursor: pointer;
+}
+.error {
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+}

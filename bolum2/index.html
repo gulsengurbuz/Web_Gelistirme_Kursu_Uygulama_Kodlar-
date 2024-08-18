@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Tasarımım</title>
+    <script
+      src="https://kit.fontawesome.com/ce208b27f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      href="/Web_Gelistirme_Bölüm_2.1/images/css.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="/Web_Gelistirme_Bölüm_2.1/helper-classes.css"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 100;
+        font-size: larger;
+        color: #dfe8df;
+        margin: 5px;
+      }
+
+      #web-geliştirme img {
+        width: 100%;
+        min-height: 550px;
+      }
+      #web-tasarım-giris {
+        margin-top: 50px;
+        text-align: center;
+        padding: 20px;
+      }
+      #web-tasarım-giris h1 {
+        margin-bottom: 30px;
+        font-size: 50px;
+        font-weight: bold;
+        text-size-adjust: 50px;
+      }
+      #ara-bölüm-baslık {
+        text-align: center;
+        font-size: 30px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin-bottom: 5%;
+        margin-top: 2%;
+        color: #025110;
+      }
+
+      .proje-baslık {
+        margin-bottom: 30px;
+        margin-top: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: center;
+        font-size: 25px;
+      }
+      .proje-acıklaması {
+        margin-inline: 25px;
+        margin-bottom: 20px;
+      }
+
+      .fa-solid {
+        padding: 5% 50% 0 50%;
+        font-size: 30px;
+      }
+      .card h3,
+      p,
+      button {
+        margin: 20px 0 20px 0;
+      }
+      .recommended {
+        width: 100%;
+        background-color: azure;
+        font-weight: bolder;
+        font-size: 100%;
+        margin: 10px 0 20px 0;
+        color: #ff0b0b;
+        border-radius: 10px;
+      }
+
+      .card-2 {
+        background-color: #13b950 !important;
+      }
+      .card-2:hover {
+        box-shadow: rgba(30, 207, 10, 0.646) 0px 7px 29px 0px !important;
+        transition: box-shadow 0.2s;
+        transform: translateY(-10px);
+      }
+
+      .Tasarım-örnekleri {
+        height: 600px;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 70px;
+      }
+      .images {
+        width: 100%;
+        height: 50%;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <nav id="nav-bar">
+      <i class="fa-solid fa-bars"></i>
+      <ul class="nav-bar-list">
+        <li><a href="#Home">Anasayfa</a></li>
+        <li><a href="#Hakkımızda">Hakkımızda</a></li>
+        <li><a href="#Servisler">Servisler</a></li>
+        <li><a href="#Referanslar">Refranslar</a></li>
+        <li><a href="/Web_Gelistirme_Bölüm_2.1/form.html">Forum</a></li>
+        <li><a href="#İletişim">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <section id="web-geliştirme">
+      <img
+        src="/Web_Gelistirme_Bölüm_2.1/images/webimagess.jpg"
+        alt="Web geliştirme görsel"
+        height="400px"
+      />
+    </section>
+    <section id="web-tasarım-giris">
+      <h1 style="color: #044a04">Hoş Geldiniz!</h1>
+
+      <p>
+        Web dünyasında öne çıkmanızı sağlayacak modern ve kullanıcı dostu web
+        siteleri tasarlıyoruz.
+      </p>
+      <p>
+        Web Tasarım , müşterilerimize yaratıcı ve etkileyici dijital deneyimler
+        sunarak onların markalarını dijital platformlarda en iyi şekilde temsil
+        etmelerine yardımcı olur.
+      </p>
+    </section>
+
+    <section id="ara-bölüm">
+      <h1 id="ara-bölüm-baslık">Öne Çıkan Projelerimiz</h1>
+
+      <div id="proje-col-3">
+        <span class="material-symbols-outlined"> empty_dashboard </span>
+
+        <h3 class="proje-baslık">Web Geliştirme Projesi</h3>
+
+        <p class="proje-acıklaması">
+          Bu proje, web geliştirme konusunda en iyi çalışmalarımızdan biridir.
+          Kullanıcı dostu bir arayüz ve etkileyici bir tasarım sunarak,
+          ziyaretçilere harika bir deneyim yaşatmayı hedeflemektedir. Proje, en
+          yeni web teknolojileri kullanılarak geliştirilmiş ve responsive
+          tasarımı sayesinde tüm cihazlarda mükemmel bir görünüm sağlamaktadır.
+          Ayrıca, SEO uyumlu kodlama ve hızlı yüklenme süreleri ile arama
+          motorlarında üst sıralarda yer almak için optimize edilmiştir. Bu
+          proje, hem teknik açıdan hem de kullanıcı deneyimi açısından mükemmel
+          bir örnektir.
+        </p>
+      </div>
+      <div id="proje-col-3">
+        <i class="fa-solid fa-mobile-screen-button" style="color: #13b950"></i>
+        <h3 class="proje-baslık">Mobil Uygulama</h3>
+        <p class="proje-acıklaması">
+          Bu proje, mobil uygulama geliştirme alanındaki en yenilikçi
+          projelerimizden biridir. Kullanıcı ihtiyaçlarına uygun olarak
+          tasarlanmış ve yüksek performanslı bir deneyim sunmak için optimize
+          edilmiştir. Proje, hem iOS hem de Android platformları için
+          geliştirilmiş olup, platformlar arası uyumluluk sağlanmıştır. Modern
+          kullanıcı arayüzü (UI) ve kullanıcı deneyimi (UX) tasarım ilkeleri
+          doğrultusunda geliştirilmiş olan bu uygulama, kullanıcıların günlük
+          yaşamlarını kolaylaştırmak için çeşitli işlevler ve özellikler
+          sunmaktadır. Ayrıca, bulut tabanlı entegrasyonlar ve gerçek zamanlı
+          veri senkronizasyonu gibi ileri teknolojilerle donatılmıştır.
+        </p>
+      </div>
+      <div id="proje-col-3">
+        <i class="fa-solid fa-cart-shopping" style="color: #13b950"></i>
+        <h3 class="proje-baslık">E-Ticaret sitesi</h3>
+        <p class="proje-acıklaması">
+          E-ticaret sitesi tasarımı ve geliştirilmesi, hedef kitleye uygun
+          estetik ve işlevsel bir web platformu oluşturmayı içerir. Bu süreç,
+          ihtiyaç analizi, kullanıcı arayüzü ve deneyimi tasarımı, frontend ve
+          backend geliştirme, entegrasyon, test ve kalite güvencesi aşamalarını
+          kapsar. Yayınlama ve sürekli bakım sürecinin yanı sıra, SEO ve dijital
+          pazarlama stratejileriyle site görünürlüğü artırılır ve kullanıcı
+          memnuniyeti sağlanır.
+        </p>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="features-alanı">
+        <article id="features-alan1">
+          <img
+            class="features-images"
+            src="/Web_Gelistirme_Bölüm_2.1/images/features-images.jpg"
+            alt="hizmetlerimage"
+          />
+        </article>
+        <article id="features-alan2">
+          <h3 class="features-baslik">Hizmetlerimiz</h3>
+          <p class="features-metin">
+            Özel web tasarım, mobil uyumlu tasarım, e-ticaret çözümleri, UI/UX
+            tasarımı ve bakım-destek hizmetlerimizle işletmenizin dijitalde
+            güçlü bir varlık oluşturmasını sağlıyoruz. İhtiyaçlarınıza göre
+            tamamen özelleştirilmiş web siteleri tasarlıyor, tüm cihazlarda
+            sorunsuz çalışmasını garanti ediyor ve kullanıcı dostu e-ticaret
+            siteleri ile online satış yapmanızı kolaylaştırıyoruz. Kullanıcı
+            deneyimini artıran arayüz tasarımlarımız, ziyaretçilerin sitenizde
+            daha uzun süre kalmasını ve istedikleri bilgilere hızlıca ulaşmasını
+            sağlar. Düzenli bakım ve destek hizmetlerimizle web sitenizin
+            sürekli güncel ve sorunsuz çalışmasını temin ediyor, performansınızı
+            en üst düzeye çıkarıyoruz.
+          </p>
+
+          <button class="btn">Devamı</button>
+        </article>
+      </div>
+    </section>
+    <h2 style="text-align: center; margin-top: 30px; font-size: 40px">
+      Premium üye Ol
+    </h2>
+
+    <section id="container-card">
+      <article class="card-1 card">
+        <h2>Free</h2>
+        <h3>0/month</h3>
+        <ul>
+          <li>Özelleştirilmiş Temel Tasarım</li>
+          <li>Responsive Tasarım</li>
+          <li>SEO Temel Optimizasyonu</li>
+          <li>Temel Destek</li>
+          <li>1 Adet Sayfa</li>
+        </ul>
+        <button class="btn">Planı Seç</button>
+      </article>
+
+      <article class="card-2 card">
+        <h2 class="recommended">Recommended</h2>
+        <h2>Basic</h2>
+        <h3>$9.99/month</h3>
+        <ul>
+          <li>Özelleştirilmiş Gelişmiş Tasarım</li>
+          <li>Responsive Tasarım</li>
+          <li>Gelişmiş SEO Optimizasyonu</li>
+          <li>Sosyal Medya Entegrasyonu</li>
+          <li>Bakım ve Güncellemeler</li>
+          <li>5 Adet Sayfa</li>
+          <li>1 Yıllık Hosting</li>
+        </ul>
+        <button class="btn-secondery">Planı Seç</button>
+      </article>
+      <article class="card-3 card">
+        <h2>Premium</h2>
+        <h3>$19.99/month</h3>
+        <ul>
+          <li>Özelleştirilmiş Profesyonel Tasarım</li>
+          <li>Responsive Tasarım</li>
+          <li>Gelişmiş SEO ve Analitik</li>
+          <li>E-Ticaret Çözümleri</li>
+          <li>UI/UX Danışmanlığı</li>
+          <li>Sosyal Medya ve Blog Entegrasyonu</li>
+          <li>Bakım, Güncellemeler ve Destek</li>
+          <li>10+ Adet Sayfa</li>
+          <li>1 Yıllık Hosting ve Domain</li>
+        </ul>
+        <button class="btn">Planı Seç</button>
+      </article>
+    </section>
+    <a href="#body" id="backtotop">
+      <i class="fa-regular fa-circle-up fa-bounce"></i>
+    </a>
+
+    <section class="counter">
+      <div class="row">
+        <div class="col-3">
+          <span> 560 </span>
+          <h4>Üye</h4>
+        </div>
+        <div class="col-3">
+          <span> 350 </span>
+          <h4>indirme</h4>
+        </div>
+
+        <div class="col-3">
+          <span> 400 </span>
+          <h4>şablon kullanımı</h4>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="Tasarım-örnekleri row">
+        <h2>Tasarım Örneklermiz</h2>
+        <div class="col-3 dıs-cerceve hareket">
+          <div class="ıc-cerceve">
+            <img
+              src="/Web_Gelistirme_Bölüm_2.1/images/minimal.jpg"
+              alt=""
+              class="images"
+            />
+            <h3>Minimalist Tasarım</h3>
+            <p>
+              Minimalist tasarım, basitliği ve işlevselliği vurgular. Bu tür
+              tasarımlar genellikle temiz, açık ve düzenli bir görünüm sunar.
+              Beyaz alanlar, net tipografi ve sınırlı renk paleti ile dikkat
+              çeker. Minimalist tasarım, kullanıcı deneyimini artırmak için
+              gereksiz öğeleri ortadan kaldırarak yalnızca en önemli bilgileri
+              sunar.
+            </p>
+            <button class="btn-secondery">Detaylar</button>
+          </div>
+        </div>
+        <div class="col-3 dıs-cerceve">
+          <div class="ıc-cerceve">
+            <img
+              src="/Web_Gelistirme_Bölüm_2.1/images/parallax.png"
+              alt=""
+              class="images"
+            />
+            <h3>Parallax Kaydırma</h3>
+            <p>
+              Parallax kaydırma tasarımı, kullanıcılar sayfada aşağı kaydırdıkça
+              arka plan ve ön plan öğelerinin farklı hızlarda hareket ettiği bir
+              tasarım stilidir. Bu, siteye derinlik ve dinamiklik katar.
+              Parallax tasarımlar, hikaye anlatımı ve görsel çekiciliği artırmak
+              için sıklıkla kullanılır.
+            </p>
+            <button class="btn-secondery">Detaylar</button>
+          </div>
+        </div>
+        <div class="col-3 dıs-cerceve">
+          <div class="ıc-cerceve">
+            <img
+              src="/Web_Gelistirme_Bölüm_2.1/images/kart-düzeni.jpg"
+              alt=""
+              class="images"
+            />
+            <h3>Kart Düzeni</h3>
+            <p>
+              Kart düzeni, içeriğin küçük, bağımsız kartlar halinde sunulduğu
+              bir tasarım stilidir. Bu kartlar, metin, görseller ve butonlar
+              içerebilir. Kart düzeni, özellikle içerik yoğun siteler için
+              idealdir ve kullanıcıların bilgileri kolayca taramasına olanak
+              tanır. Ayrıca, bu tasarım responsive (duyarlı) siteler için de
+              oldukça uygundur.
+            </p>
+            <button class="btn-secondery">Detaylar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="web-footer">
+      <div class="col-2 footer-1">
+        <a href="#" class="about">About</a>
+        <a href="#" class="blog"> Blog</a>
+        <a href="#" class="forum"> Forum</a>
+        <a href="#" class="contact">Contact</a>
+      </div>
+      <div class="col-2 footer-1">
+        <a href="#"
+          ><i
+            class="fa-brands fa-square-instagram instagram"
+            style="color: #07abd5"
+          ></i
+        ></a>
+        <a href="#"
+          ><i
+            class="fa-brands fa-square-twitter twitter"
+            style="color: #07abd5"
+          ></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-facebook facebook" style="color: #07abd5"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

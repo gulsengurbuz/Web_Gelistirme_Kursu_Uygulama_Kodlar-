@@ -1,0 +1,76 @@
+#about {
+  &-bölüm1 {
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1.2rem;
+
+      &__image {
+        border: 10px $six-color;
+        padding: 0.2rem;
+        border-radius: 10px;
+      }
+
+      &__bio {
+        border-radius: 20px;
+        background-color: $five-color;
+        text-align: center;
+        padding: 3rem;
+      }
+    }
+  }
+  &-bolum2 {
+    color: #fff;
+
+    background-color: $six-color;
+
+    #progress-bar {
+      .progress {
+        height: 20px;
+
+        background-color: $three-color;
+        border-radius: 5px;
+        margin-bottom: 0.6rem;
+
+        div {
+          height: 100%;
+          text-align: center;
+          background-color: $seven-color;
+        }
+      }
+    }
+  }
+  &-bolum3 {
+    .about-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      align-items: center;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+  &-bolum4 {
+    .referances {
+      ul {
+        list-style: none;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+      }
+      p {
+        border: 1px solid $dark-color;
+        border-radius: 5px;
+        padding: 0.5rem;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}

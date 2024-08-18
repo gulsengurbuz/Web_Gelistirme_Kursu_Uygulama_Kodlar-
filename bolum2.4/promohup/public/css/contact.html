@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/promohup/public/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prompt&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header__inner">
+      <div class="container">
+        <nav class="main-nav">
+          <img src="/promohup/img/ıconn.png" alt="" class="main-nav__logo" />
+          <ul class="main-nav__items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="contact-bolum1" class="text_center py-2">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="border-bottom"></div>
+        <p class="lead">
+          Size yardımcı olmak için buradayız! Hizmetlerimiz hakkında bir sorunuz
+          varsa, destek ihtiyaçlarınız varsa ya da sadece merhaba demek
+          istiyorsanız, bizimle iletişime geçmekten çekinmeyin. Ekibimiz,
+          taleplerinize yanıt vermek ve size gereken yardımı sağlamak için
+          hazır. Aşağıdaki formu doldurabilir veya verilen iletişim bilgilerini
+          kullanarak bize ulaşabilirsiniz. Sizden haber almak için
+          sabırsızlanıyoruz!
+        </p>
+
+        <form action="https://formspree.io/f/mrbzlnzl" method="POST">
+          <div class="form-dosyası">
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="Enter Name"
+              class="name input"
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="subject input"
+              placeholder="Enter Subject"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+              class="email input"
+            />
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              class="phone input"
+              placeholder="Enter Phone"
+            />
+            <textarea
+              class="message input"
+              name="message"
+              id="message"
+              placeholder="Enter Message"
+            ></textarea>
+            <button type="submit" class="btn-medium">Sumbit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact-bolum2" class="bg-primary py-4">
+      <div class="container">
+        <div class="contact-info">
+          <i class="fas fa-envelope fa-2x"></i>
+          <h3>Email</h3>
+          <p>mail@mail.com</p>
+        </div>
+        <div class="contact-info">
+          <i class="fas fa-phone fa-2x"></i>
+          <h3>Phone</h3>
+          <p>(555) 5555 555</p>
+        </div>
+        <div class="contact-info">
+          <i class="fas fa-address-card fa-2x"></i>
+          <h3>Adres</h3>
+          <p>İstanbul/türkiye</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2024. All Rights Reserved.</p>
+        <div class="social">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
