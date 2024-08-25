@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/bolum3/style.css" />
+
+    <title>Blog</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobile"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="mobile" class="collapse navbar-collapse">
+          <ul class="navbar-nav me-outo">
+            <li class="nav-item">
+              <a href="/bolum3/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/bolum3/blog.html" class="nav-link active">Blogs</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/bolum3/contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="row g-1 ms-auto">
+            <div class="col-8">
+              <input type="text" class="form-control" placeholder="search" />
+            </div>
+            <div class="col-4">
+              <button class="btn btn-warning">
+                <i class="fa fa-solid fa-magnifying-glass"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-md-3 d-none d-md-block">
+            <div class="list-group">
+              <a href="" class="list-group-item list-group-item actiob"
+                >Category 1</a
+              >
+              <a href="" class="list-group-item list-group-item actiob"
+                >Category 2</a
+              >
+              <a href="" class="list-group-item list-group-item actiob"
+                >Category 3</a
+              >
+              <a href="" class="list-group-item list-group-item actiob"
+                >Category 4</a
+              >
+              <a href="" class="list-group-item list-group-item actiob"
+                >Category 5</a
+              >
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </div>
+            <div class="card mb-2 shadow">
+              <div class="row">
+                <div class="col-4 py-3">
+                  <img
+                    src="/bolum3/img/kariyer.jpeg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Kariyer Gelişimi</h5>
+                    <p class="card-text">
+                      İş dünyasında etkili iletişim ve liderlik becerilerini
+                      geliştirmek için tasarlanmış bir kurs. İletişim
+                      stratejileri, liderlik stilleri ve ekip yönetimi
+                      konularını kapsar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-2 shadow">
+              <div class="row">
+                <div class="col-4 py-3">
+                  <img
+                    src="/bolum3/img/matematik.jpeg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Matematik</h5>
+                    <p class="card-text">
+                      Matematiğin temel kavramlarından başlayarak, ileri düzey
+                      konulara kadar kapsamlı bir öğrenme deneyimi sunar.
+                      Hesaplama becerilerini geliştirmek ve matematiksel düşünme
+                      yeteneğini artırmak için idealdir.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-2 shadow">
+              <div class="row">
+                <div class="col-4 py-3">
+                  <img
+                    src="/bolum3/img/fen.jpeg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Fen Bilimleri</h5>
+                    <p class="card-text">
+                      Kimya biliminin temellerini ve laboratuvar tekniklerini
+                      öğretir. Kimyasal reaksiyonlar, analitik yöntemler ve
+                      deney yapma becerilerini geliştirmek için tasarlanmıştır.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-2 shadow">
+              <div class="row">
+                <div class="col-4 py-3">
+                  <img
+                    src="/bolum3/img/sosyal.jpg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Sosyal Bilimler</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Id quasi nemo qui fugit explicabo est quo rerum. Eum,
+                      consequuntur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-2 shadow">
+              <div class="row">
+                <div class="col-4 py-3">
+                  <img
+                    src="/bolum3/img/dil.jpeg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Dil Öğrenme</h5>
+                    <p class="card-text">
+                      İngilizce konuşma ve dinleme becerilerini geliştirmeye
+                      yönelik interaktif bir kurs. Günlük konuşmalar, iş
+                      İngilizcesi ve anlama stratejilerini kapsar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div aria-label="Page navigation  my-3">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-5 bg-dark text-white">
+      <div class="container text-center">
+        <span>All Rights Reserved. @2024</span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
