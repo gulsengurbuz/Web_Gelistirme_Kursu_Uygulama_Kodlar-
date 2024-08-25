@@ -8,7 +8,6 @@ body {
   background-color: #3197bc !important;
 }
 
-/*carların içeriğindeki fotoların brbiri içine torumadığı durumlar için ekstra bir css kodu var burada*/
 .card-img-top {
   width: 100%;
   height: 25vh;
